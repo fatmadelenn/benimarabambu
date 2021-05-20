@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:./benimarabambudb;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE # h2
+    username: sa
+    password:
+    driver_class_name: org.h2.Driver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+#      ddl-auto: none
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.H2Dialect
